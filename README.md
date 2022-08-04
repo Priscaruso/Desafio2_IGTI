@@ -17,7 +17,6 @@
 
 :small_blue_diamond: [Banco de Dados MongoDB](#banco-de-dados-mongodb)
 
-:small_blue_diamond: [Consultas NoSQL](#consultas-nosql)
 
 
 ## Enunciado do projeto
@@ -74,4 +73,5 @@ Para extrair as informações necessárias a partir dos dados armazenados no ban
   
 ## Banco de Dados MongoDB
 Para criar armazenar os dados coletados da lista de jogadores no formato JSON (dado semi estruturado) foi o usado o MongoDB Atlas, que é um cluster MongoDB gerado na nuvem, sem a necessidade de instalação na máquina local. A conexão com esse banco foi realizada por meio do Jupyter Notebook usando a biblioteca PyMongo para linguagem Python. Todas as informações sobre a criação do cluster no MongoDB e conexão ao banco podem ser obtidas através do link abaixo:
+
   https://www.mongodb.com/docs/atlas/
