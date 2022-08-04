@@ -1,5 +1,5 @@
-🇧🇷
-# DESAFIO DE ETL COM MYSQL E MONGODB
+
+# 🇧🇷 DESAFIO DE ETL COM MYSQL E MONGODB
 
 ### Tópicos 
 
@@ -14,8 +14,6 @@
 :small_blue_diamond: [Diagrama entidade e relacionamento](#diagrama-entidade-e-relacionamento)
 
 :small_blue_diamond: [Script para Criação das estruturas das Tabelas](#script-para-criação-das-estruturas-das-tabelas)
-
-:small_blue_diamond: [Script de Inserção dos dados na Tabela Pesquisa](#script-de-inserção-dos-dados-na-tabela-pesquisa)
 
 :small_blue_diamond: [Banco de Dados MongoDB](#banco-de-dados-mongodb)
 
@@ -46,17 +44,34 @@ Este projeto é um Desafio elaborado durante o Bootcamp DiversiData Tech PAN com
    
 ## Execução
 Para realizar o projeto foi usado um jupyter notebook usando a linguagem Python. 
-  Primeiramente, é preciso criar um ambiente virtual para instalar todos os pacotes necessários no projeto com os seguintes comandos: 
-  'python -m venv /path/to/directory', onde /path/to/directory é o diretório onde será criado o ambiente virtual e depois ativar o ambiente virtual com o comando '. /path/to/directory/bin/activate'.
-  Depois é necessário baixar o arquivo do notebook 'co_pesquisa.ipynb' e o dataset usado contido na pasta 'datasets'. Depois é só fazer o upload do notebook para o Google Colab, seguir cada passo descrito no notebook, fazendo os ajustes necessários no notebook quanto ao local de armazenamento do dataset e aos dados de conexão para acessar o banco MySQL e MongoDB.
+Primeiramente, é preciso criar um ambiente virtual para instalar todos os pacotes necessários no projeto com os seguintes comandos:
+  * 'python -m venv /path/to/directory', onde /path/to/directory é o diretório onde será criado o ambiente virtual e depois ativar o ambiente virtual com o comando '. /path/to/directory/bin/activate'.
+  
+Depois é necessário baixar o arquivo do notebook 'Desafio2_IGTI.ipynb' e os datasets usados contido na pasta 'datasets'. Depois é só fazer o upload do notebook para o Google Colab, seguir cada passo descrito no notebook, fazendo os ajustes necessários no notebook quanto ao local de armazenamento do dataset e aos dados de conexão para acessar o banco MySQL e MongoDB.
   
 
- ## Banco de dados MySQL
-  Para criar as estruturas de tabelas para armazenar os dados da pesquisa, foi utilizado o Banco de Dados relacional MySQL. Para usá-lo baixar instalar seguindo as       instruções no link abaixo, dependendo do sistema operacional:
+## Banco de dados MySQL
+Para criar as estruturas de tabelas para armazenar os dados dos jogadores, foi utilizado o Banco de Dados relacional MySQL. Para usá-lo baixar instalar seguindo as instruções no link abaixo, dependendo do sistema operacional:
   
-  https://dev.mysql.com/downloads/mysql/
+https://dev.mysql.com/downloads/mysql/
+  
+Além do servidor, é preciso instalar também o MySQL Workbench usado como o SGBD (Sistema Gerenciador de Banco de Dados), contido no link abaixo:
+  
+https://dev.mysql.com/downloads/workbench/
   
   
-  Além do servidor, é preciso instalar também o MySQL Workbench usado como o SGBD (Sistema Gerenciador de Banco de Dados), contido no link abaixo:
+## Diagrama Entidade e Relacionamento
+O diagrama criado no banco MySQL encontra-se no arquivo 'modelagem_dados.mwb' dentro da pasta modelo_relacional. Basta baixar e fazer o upload dele para o MySQL Workbench.
   
-  https://dev.mysql.com/downloads/workbench/
+  
+## Script para Criação das estruturas das Tabelas
+Para criar as tabelas a partir do diagrama entidade e relacionamento feito, foi gerado o script 'script_tabelas.sql ', que se encontra dentro da pasta scripts_sql. Basta baixá-lo, fazer o carregamento dele no MySQL Workbench e executar o script.
+  
+  
+## Consultas SQL   
+Para extrair as informações necessárias a partir dos dados armazenados no banco, foi criado um arquivo de consultas SQL 'consultas_tabelas.sql', que se encontra dentro da pasta scripts_sql. Basta baixá-lo e fazer o upload do mesmo para o MySQL Workbench e executá-lo para obter as informações.
+  
+  
+## Banco de Dados MongoDB
+Para criar armazenar os dados coletados da lista de jogadores no formato JSON (dado semi estruturado) foi o usado o MongoDB Atlas, que é um cluster MongoDB gerado na nuvem, sem a necessidade de instalação na máquina local. A conexão com esse banco foi realizada por meio do Jupyter Notebook usando a biblioteca PyMongo para linguagem Python. Todas as informações sobre a criação do cluster no MongoDB e conexão ao banco podem ser obtidas através do link abaixo:
+  https://www.mongodb.com/docs/atlas/
