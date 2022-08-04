@@ -21,7 +21,7 @@
 
 ## Enunciado do projeto
 O projeto consiste em extrair, transformar e armazenar os dados (ETL) e assim, poder obter informações sobre dois tipos de fontes de dados, uma em formato CSV e outra em formato JSON. Foram usando dois tipos de banco de dados diferentes para cada um desses arquivos, o MySQL para o CSV e o MongoDB para o JSON.
-O arquivo CSV consiste em dados estatísticos fictícios de jogadores que realizaram partidas dos jogos Xadrez, Dama e Jogo da Velha. Já o arquivo JSON consiste em dados reais de jogadores de Xadrez obtidos por meio da API do jogo Chess. Os atributos contidos nesse arquivo se encontram abaixo:
+O arquivo CSV consiste em dados estatísticos fictícios de jogadores que realizaram partidas dos jogos Xadrez, Dama e Jogo da Velha. Já o arquivo JSON consiste em dados reais de jogadores de Xadrez obtidos por meio da API do jogo Chess. 
  
   
 ## Objetivo
