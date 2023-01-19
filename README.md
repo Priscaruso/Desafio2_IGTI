@@ -20,12 +20,13 @@
 
 
 ## Enunciado do projeto
-O projeto consiste em extrair, transformar e armazenar os dados (ETL) e assim, poder obter informações sobre dois tipos de fontes de dados, uma em formato CSV e outra em formato JSON. Foram usando dois tipos de banco de dados diferentes para cada um desses arquivos, o MySQL para o CSV e o MongoDB para o JSON.
+O projeto consiste em extrair, transformar e armazenar os dados (ETL) e assim, poder obter informações sobre dois tipos de fontes de dados, uma em formato CSV e outra em formato JSON. Foram usados dois tipos de banco de dados diferentes para cada um desses arquivos, o MySQL para o CSV e o MongoDB para o JSON.
 O arquivo CSV consiste em dados estatísticos fictícios de jogadores que realizaram partidas dos jogos Xadrez, Dama e Jogo da Velha. Já o arquivo JSON consiste em dados reais de jogadores de Xadrez obtidos por meio da API do jogo Chess. 
  
   
 ## Objetivo
 Este projeto é um Desafio elaborado durante o Bootcamp DiversiData Tech PAN com o objetivo de exercitar os conceitos de coleta, transformação e armazenamento de dados obtidos de duas fontes diferentes. As atividades foram separadas em dois tipos de acordo com a fonte de dados e estão especificadas abaixo:
+
   Dados estruturados em CSV
   * Coletar os dados fictícios dos jogadores de diversos jogos armazenados em arquivo CSV
   * Tratar os dados ausentes
@@ -33,6 +34,7 @@ Este projeto é um Desafio elaborado durante o Bootcamp DiversiData Tech PAN com
   * Criar estruturas de tabelas no banco de dados MySQL
   * Inserir os dados coletados na estrutura de tabelas criadas
   * Realizar comandos SQL para extrair informações dos dados armazenados
+  
   Dados não estruturados em JSON
   * Coletar os dados reais dos jogadores do jogo Chess armazenados em JSON
   * Criar um banco de dados não relacional no MongoDB
